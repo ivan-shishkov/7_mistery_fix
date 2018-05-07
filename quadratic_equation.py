@@ -2,22 +2,22 @@ from math import sqrt
 
 
 def get_roots(a, b, c):
-    """Solves a quadratic equation.
+    """Решает квадратное уравнение.
 
-    This function solves a quadratic equation having the form
+    Данная функция решает квадратные уравнения, имеющие вид
     a*x*x + b*x + c = 0
 
-    Positional arguments:
-    a -- the quadratic coefficient of the equation
-    b -- the linear coefficient of the equation
-    c -- the constant of the equation
+    Аргументы функции:
+    a -- старший коэффициент уравнения
+    b -- средний коэффициент уравнения
+    c -- свободный член
 
-    Function returns 2-element tuple with the roots of the equation.
+    Функция возвращает кортеж из 2-х элементов.
 
-    Return value depends from discriminant's value:
-    (None, None) if discriminant less than 0
-    (root1, None) if discriminant is equal to 0
-    (root1, root2) if discriminant great than 0
+    При этом содержимое кортежа зависит от значения дискриминанта:
+    (None, None) - если дискриминант меньше нуля
+    (корень1, None) - если дискриминант равен нулю
+    (корень1, корень2) - если дискриминант больше нуля
     """
     discriminant = b ** 2 - 4 * a * c
 
