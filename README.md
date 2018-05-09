@@ -6,7 +6,7 @@
 
 Программный интерфейс модуля представлен функцией get_roots:
 
-```
+```py
 get_roots(a, b, c)
 
 ```
@@ -26,7 +26,7 @@ get_roots(a, b, c)
 
 Примеры использования модуля для решения квадратных уравнений:
 
-```
+```py
 >>> import quadratic_equation
 >>>
 >>> two_roots = quadratic_equation.get_roots(1, 2, -24)
