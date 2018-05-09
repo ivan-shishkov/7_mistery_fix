@@ -24,22 +24,14 @@ get_roots(a, b, c)
 * **(корень1, корень2)** - если дискриминат больше нуля
 
 
-Примеры использования модуля для решения квадратных уравнений:
+Пример использования модуля для решения квадратных уравнений:
 
 ```py
 >>> import quadratic_equation
 >>>
->>> two_roots = quadratic_equation.get_roots(1, 2, -24)
->>> print(two_roots)
-(-6.0, 4.0)
->>>
->>> one_root = quadratic_equation.get_roots(1, 4, 4)
->>> print(one_root)
-(-2.0, None)
->>>
->>> none_roots = quadratic_equation.get_roots(4, 1, 3)
->>> print(none_roots)
-(None, None)
+>>> root1, root2 = quadratic_equation.get_roots(1, 2, -24)
+>>> print('Корни квадратного уравнения: {} {}'.format(root1, root2))
+Корни квадратного уравнения: -6.0 4.0
 ```
 
 # Как запустить тесты
